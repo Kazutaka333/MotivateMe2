@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D740971C1F73F45600939EE9 /* QuoteList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74097191F73F23900939EE9 /* QuoteList.storyboard */; };
+		D740971D1F73F45A00939EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D740971B1F73F37300939EE9 /* LaunchScreen.storyboard */; };
+		D740971E1F73F45C00939EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D740971A1F73F37300939EE9 /* Main.storyboard */; };
 		D76CA8211F73D1DE003ECD76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8201F73D1DE003ECD76 /* AppDelegate.swift */; };
 		D76CA8231F73D1DE003ECD76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8221F73D1DE003ECD76 /* ViewController.swift */; };
-		D76CA8261F73D1DE003ECD76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76CA8241F73D1DE003ECD76 /* Main.storyboard */; };
 		D76CA8291F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8271F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld */; };
 		D76CA82B1F73D1DE003ECD76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */; };
-		D76CA82E1F73D1DE003ECD76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76CA82C1F73D1DE003ECD76 /* LaunchScreen.storyboard */; };
 		D76CA8391F73D1DE003ECD76 /* Motivate_Me_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8381F73D1DE003ECD76 /* Motivate_Me_2Tests.swift */; };
 		D76CA8441F73D1DE003ECD76 /* Motivate_Me_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8431F73D1DE003ECD76 /* Motivate_Me_2UITests.swift */; };
 /* End PBXBuildFile section */
@@ -35,13 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D74097191F73F23900939EE9 /* QuoteList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = QuoteList.storyboard; path = "User Interface/QuoteList.storyboard"; sourceTree = "<group>"; };
+		D740971A1F73F37300939EE9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "User Interface/Main.storyboard"; sourceTree = "<group>"; };
+		D740971B1F73F37300939EE9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "User Interface/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		D76CA81D1F73D1DE003ECD76 /* Motivate Me 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motivate Me 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76CA8201F73D1DE003ECD76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D76CA8221F73D1DE003ECD76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D76CA8251F73D1DE003ECD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D76CA8281F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motivate_Me_2.xcdatamodel; sourceTree = "<group>"; };
 		D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D76CA82D1F73D1DE003ECD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D76CA82F1F73D1DE003ECD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76CA8341F73D1DE003ECD76 /* Motivate Me 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motivate Me 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76CA8381F73D1DE003ECD76 /* Motivate_Me_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivate_Me_2Tests.swift; sourceTree = "<group>"; };
@@ -101,9 +103,8 @@
 			children = (
 				D76CA8201F73D1DE003ECD76 /* AppDelegate.swift */,
 				D76CA8221F73D1DE003ECD76 /* ViewController.swift */,
-				D76CA8241F73D1DE003ECD76 /* Main.storyboard */,
+				D76CA8531F73F13B003ECD76 /* User Interface */,
 				D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */,
-				D76CA82C1F73D1DE003ECD76 /* LaunchScreen.storyboard */,
 				D76CA82F1F73D1DE003ECD76 /* Info.plist */,
 				D76CA8271F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld */,
 			);
@@ -126,6 +127,16 @@
 				D76CA8451F73D1DE003ECD76 /* Info.plist */,
 			);
 			path = "Motivate Me 2UITests";
+			sourceTree = "<group>";
+		};
+		D76CA8531F73F13B003ECD76 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D74097191F73F23900939EE9 /* QuoteList.storyboard */,
+				D740971B1F73F37300939EE9 /* LaunchScreen.storyboard */,
+				D740971A1F73F37300939EE9 /* Main.storyboard */,
+			);
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76CA82E1F73D1DE003ECD76 /* LaunchScreen.storyboard in Resources */,
+				D740971D1F73F45A00939EE9 /* LaunchScreen.storyboard in Resources */,
 				D76CA82B1F73D1DE003ECD76 /* Assets.xcassets in Resources */,
-				D76CA8261F73D1DE003ECD76 /* Main.storyboard in Resources */,
+				D740971C1F73F45600939EE9 /* QuoteList.storyboard in Resources */,
+				D740971E1F73F45C00939EE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,25 +313,6 @@
 			targetProxy = D76CA8401F73D1DE003ECD76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D76CA8241F73D1DE003ECD76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D76CA8251F73D1DE003ECD76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D76CA82C1F73D1DE003ECD76 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D76CA82D1F73D1DE003ECD76 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D76CA8461F73D1DE003ECD76 /* Debug */ = {
@@ -518,6 +511,7 @@
 				D76CA84A1F73D1DE003ECD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76CA84B1F73D1DE003ECD76 /* Build configuration list for PBXNativeTarget "Motivate Me 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +520,7 @@
 				D76CA84D1F73D1DE003ECD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76CA84E1F73D1DE003ECD76 /* Build configuration list for PBXNativeTarget "Motivate Me 2UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +529,7 @@
 				D76CA8501F73D1DE003ECD76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
