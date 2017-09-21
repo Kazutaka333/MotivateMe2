@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D740971C1F73F45600939EE9 /* QuoteList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74097191F73F23900939EE9 /* QuoteList.storyboard */; };
+		D738008B1F740B4F00F39E29 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D738008A1F740B4F00F39E29 /* Quote.swift */; };
+		D738008F1F740C7D00F39E29 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D738008D1F740C7D00F39E29 /* QuoteTableViewCell.swift */; };
+		D73800901F740C7D00F39E29 /* QuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D738008E1F740C7D00F39E29 /* QuoteTableViewCell.xib */; };
 		D740971D1F73F45A00939EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D740971B1F73F37300939EE9 /* LaunchScreen.storyboard */; };
 		D740971E1F73F45C00939EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D740971A1F73F37300939EE9 /* Main.storyboard */; };
 		D76CA8211F73D1DE003ECD76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8201F73D1DE003ECD76 /* AppDelegate.swift */; };
-		D76CA8231F73D1DE003ECD76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8221F73D1DE003ECD76 /* ViewController.swift */; };
 		D76CA8291F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8271F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld */; };
 		D76CA82B1F73D1DE003ECD76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */; };
 		D76CA8391F73D1DE003ECD76 /* Motivate_Me_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8381F73D1DE003ECD76 /* Motivate_Me_2Tests.swift */; };
 		D76CA8441F73D1DE003ECD76 /* Motivate_Me_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8431F73D1DE003ECD76 /* Motivate_Me_2UITests.swift */; };
+		D78060821F73FE250017A98C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78060811F73FBC70017A98C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D74097191F73F23900939EE9 /* QuoteList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = QuoteList.storyboard; path = "User Interface/QuoteList.storyboard"; sourceTree = "<group>"; };
+		D738008A1F740B4F00F39E29 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quote.swift; path = Model/Quote.swift; sourceTree = "<group>"; };
+		D738008D1F740C7D00F39E29 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuoteTableViewCell.swift; path = "User Interface/View/QuoteTableViewCell.swift"; sourceTree = "<group>"; };
+		D738008E1F740C7D00F39E29 /* QuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QuoteTableViewCell.xib; path = "User Interface/View/QuoteTableViewCell.xib"; sourceTree = "<group>"; };
 		D740971A1F73F37300939EE9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "User Interface/Main.storyboard"; sourceTree = "<group>"; };
 		D740971B1F73F37300939EE9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "User Interface/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		D76CA81D1F73D1DE003ECD76 /* Motivate Me 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motivate Me 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76CA8201F73D1DE003ECD76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D76CA8221F73D1DE003ECD76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D76CA8281F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motivate_Me_2.xcdatamodel; sourceTree = "<group>"; };
 		D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D76CA82F1F73D1DE003ECD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		D76CA83F1F73D1DE003ECD76 /* Motivate Me 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motivate Me 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76CA8431F73D1DE003ECD76 /* Motivate_Me_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivate_Me_2UITests.swift; sourceTree = "<group>"; };
 		D76CA8451F73D1DE003ECD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78060811F73FBC70017A98C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "View Controller/MainViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D73800891F740B2900F39E29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D738008A1F740B4F00F39E29 /* Quote.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D738008C1F740C4200F39E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D738008D1F740C7D00F39E29 /* QuoteTableViewCell.swift */,
+				D738008E1F740C7D00F39E29 /* QuoteTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		D76CA8141F73D1DE003ECD76 = {
 			isa = PBXGroup;
 			children = (
@@ -102,11 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				D76CA8201F73D1DE003ECD76 /* AppDelegate.swift */,
-				D76CA8221F73D1DE003ECD76 /* ViewController.swift */,
+				D78060801F73FB980017A98C /* View Controller */,
 				D76CA8531F73F13B003ECD76 /* User Interface */,
 				D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */,
 				D76CA82F1F73D1DE003ECD76 /* Info.plist */,
 				D76CA8271F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld */,
+				D73800891F740B2900F39E29 /* Model */,
 			);
 			path = "Motivate Me 2";
 			sourceTree = "<group>";
@@ -132,11 +154,19 @@
 		D76CA8531F73F13B003ECD76 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				D74097191F73F23900939EE9 /* QuoteList.storyboard */,
 				D740971B1F73F37300939EE9 /* LaunchScreen.storyboard */,
 				D740971A1F73F37300939EE9 /* Main.storyboard */,
+				D738008C1F740C4200F39E29 /* View */,
 			);
 			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		D78060801F73FB980017A98C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D78060811F73FBC70017A98C /* MainViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +282,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73800901F740C7D00F39E29 /* QuoteTableViewCell.xib in Resources */,
 				D740971D1F73F45A00939EE9 /* LaunchScreen.storyboard in Resources */,
 				D76CA82B1F73D1DE003ECD76 /* Assets.xcassets in Resources */,
-				D740971C1F73F45600939EE9 /* QuoteList.storyboard in Resources */,
 				D740971E1F73F45C00939EE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76CA8231F73D1DE003ECD76 /* ViewController.swift in Sources */,
+				D738008B1F740B4F00F39E29 /* Quote.swift in Sources */,
+				D78060821F73FE250017A98C /* MainViewController.swift in Sources */,
 				D76CA8211F73D1DE003ECD76 /* AppDelegate.swift in Sources */,
 				D76CA8291F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld in Sources */,
+				D738008F1F740C7D00F39E29 /* QuoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kazutaka.Motivate-Me-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -446,7 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kazutaka.Motivate-Me-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -461,7 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kazutaka.Motivate-Me-2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motivate Me 2.app/Motivate Me 2";
 			};
@@ -477,7 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kazutaka.Motivate-Me-2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Motivate Me 2.app/Motivate Me 2";
 			};
@@ -492,7 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kazutaka.Motivate-Me-2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Motivate Me 2";
 			};
@@ -507,7 +539,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kazutaka.Motivate-Me-2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Motivate Me 2";
 			};

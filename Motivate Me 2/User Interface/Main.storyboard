@@ -12,7 +12,7 @@
         <!--Cool Logo-->
         <scene sceneID="hbW-tu-G4k">
             <objects>
-                <viewController id="aUX-dN-877" sceneMemberID="viewController">
+                <viewController id="aUX-dN-877" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RNX-Cu-fr0"/>
                         <viewControllerLayoutGuide type="bottom" id="4Tu-73-huG"/>
@@ -24,6 +24,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p2J-PR-yNf">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="aUX-dN-877" id="enD-3G-aYw"/>
+                                    <outlet property="delegate" destination="aUX-dN-877" id="VYg-J0-vSJ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +39,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cool Logo" id="zuk-ri-DrU"/>
+                    <connections>
+                        <outlet property="tableView" destination="p2J-PR-yNf" id="R9T-BY-fby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NL4-PJ-AD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
