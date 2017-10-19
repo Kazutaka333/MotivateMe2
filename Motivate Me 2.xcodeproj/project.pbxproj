@@ -17,7 +17,7 @@
 		D76CA82B1F73D1DE003ECD76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76CA82A1F73D1DE003ECD76 /* Assets.xcassets */; };
 		D76CA8391F73D1DE003ECD76 /* Motivate_Me_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8381F73D1DE003ECD76 /* Motivate_Me_2Tests.swift */; };
 		D76CA8441F73D1DE003ECD76 /* Motivate_Me_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76CA8431F73D1DE003ECD76 /* Motivate_Me_2UITests.swift */; };
-		D78060821F73FE250017A98C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78060811F73FBC70017A98C /* MainViewController.swift */; };
+		D7C04E3D1F780FFA009F1402 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78060811F73FBC70017A98C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D76CA8481F73D1DE003ECD76 /* Build configuration list for PBXNativeTarget "Motivate Me 2" */;
 			buildPhases = (
+				D7FEB8AC1F7443C90000243F /* ShellScript */,
 				D76CA8191F73D1DE003ECD76 /* Sources */,
 				D76CA81A1F73D1DE003ECD76 /* Frameworks */,
 				D76CA81B1F73D1DE003ECD76 /* Resources */,
@@ -305,13 +306,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D7FEB8AC1F7443C90000243F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"unko\"\nTAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind -r \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 \\\n| xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" \\\n| perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D76CA8191F73D1DE003ECD76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C04E3D1F780FFA009F1402 /* MainViewController.swift in Sources */,
 				D738008B1F740B4F00F39E29 /* Quote.swift in Sources */,
-				D78060821F73FE250017A98C /* MainViewController.swift in Sources */,
 				D76CA8211F73D1DE003ECD76 /* AppDelegate.swift in Sources */,
 				D76CA8291F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld in Sources */,
 				D738008F1F740C7D00F39E29 /* QuoteTableViewCell.swift in Sources */,

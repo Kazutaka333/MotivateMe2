@@ -11,7 +11,8 @@ import Foundation
 // TODO: Object mapper
 
 class Quote {
-    var text = ""
-    var author = ""
+    // TODO: internal(set)
+    public var text = ""
+    public var author = ""
     init() {}
 }
