@@ -129,6 +129,7 @@
 				D76CA82F1F73D1DE003ECD76 /* Info.plist */,
 				D76CA8271F73D1DE003ECD76 /* Motivate_Me_2.xcdatamodeld */,
 				D73800891F740B2900F39E29 /* Model */,
+				D7F1A6111F9963D5008D4A2C /* Quote Data */,
 			);
 			path = "Motivate Me 2";
 			sourceTree = "<group>";
@@ -169,6 +170,13 @@
 			name = "View Controller";
 			sourceTree = "<group>";
 		};
+		D7F1A6111F9963D5008D4A2C /* Quote Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Quote Data";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,7 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D76CA8481F73D1DE003ECD76 /* Build configuration list for PBXNativeTarget "Motivate Me 2" */;
 			buildPhases = (
-				D7FEB8AC1F7443C90000243F /* ShellScript */,
+				D7FEB8AC1F7443C90000243F /* Run Script */,
 				D76CA8191F73D1DE003ECD76 /* Sources */,
 				D76CA81A1F73D1DE003ECD76 /* Frameworks */,
 				D76CA81B1F73D1DE003ECD76 /* Resources */,
@@ -307,18 +315,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D7FEB8AC1F7443C90000243F /* ShellScript */ = {
+		D7FEB8AC1F7443C90000243F /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"unko\"\nTAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind -r \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 \\\n| xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" \\\n| perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 \\\n| xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" \\\n| perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

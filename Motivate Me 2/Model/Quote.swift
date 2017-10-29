@@ -14,5 +14,7 @@ class Quote {
     // TODO: internal(set)
     public var text = ""
     public var author = ""
+    public var categories: [String] = []
     init() {}
+
 }
