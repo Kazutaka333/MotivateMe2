@@ -17,14 +17,14 @@ class QuoteTableViewCell: UITableViewCell {
     var quote: Quote? {
         didSet{
             quoteLabel?.text = quote?.text
-            authorLabel?.text = quote?.author
+            authorLabel?.text = quote?.source
         }
     }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         quoteLabel?.text = quote?.text
-        authorLabel?.text = quote?.author
+        authorLabel?.text = quote?.source
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

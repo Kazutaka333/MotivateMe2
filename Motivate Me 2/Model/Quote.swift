@@ -7,14 +7,23 @@
 //
 
 import Foundation
+import ObjectMapper
 
-// TODO: Object mapper
-
-class Quote {
+class Quote: Mappable {
     // TODO: internal(set)
     public var text = ""
-    public var author = ""
+    public var source = ""
     public var categories: [String] = []
     init() {}
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        text <- map["text"]
+        source <- map["source"]
+        categories <- map["categories"]
+    }
+    
+    
 
 }

@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func setDummyData() {
         let quote = Quote()
         quote.text = "Time is money."
-        quote.author = "Someone"
+        quote.source = "Someone"
         quotes = [quote, quote, quote, quote]
     }
     
