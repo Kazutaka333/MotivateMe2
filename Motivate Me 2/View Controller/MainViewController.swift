@@ -16,7 +16,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: QuoteTableViewCell.cellID, bundle: nil) , forCellReuseIdentifier: QuoteTableViewCell.cellID)
+        tableView.register(UINib(nibName: QuoteTableViewCell.cellID, bundle: nil) ,
+                           forCellReuseIdentifier: QuoteTableViewCell.cellID)
         setDummyData()
         tableView.reloadData()
     }
@@ -39,10 +40,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: QuoteTableViewCell.cellID) as! QuoteTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: QuoteTableViewCell.cellID)
+            as? QuoteTableViewCell else {
+                // TODO: Error handling
+                return UITableViewCell()
+        }
         cell.quote = quotes[indexPath.row]
         return cell
     }
 
 }
-
