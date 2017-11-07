@@ -15,7 +15,7 @@ class QuoteTableViewCell: UITableViewCell {
     
     static let cellID = "QuoteTableViewCell"
     var quote: Quote? {
-        didSet{
+        didSet {
             quoteLabel?.text = quote?.text
             authorLabel?.text = quote?.source
         }

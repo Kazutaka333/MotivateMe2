@@ -23,7 +23,5 @@ class Quote: Mappable {
         source <- map["source"]
         categories <- map["categories"]
     }
-    
-    
 
 }
